@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50rem;
 }
 
 .App-logo {
@@ -19,4 +24,11 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  border: 3px solid blue;
+  border-radius: 8rem;
 }

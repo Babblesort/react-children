@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import OmniButton from './OmniButton';
 import './App.css';
+import Circle from './Circle';
 
 function App() {
+  const generalClick = buttonName => alert(`Click on ${buttonName}`);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <OmniButton buttonName="stuff" onClick={generalClick}>
+        <p>Stuff Inside</p>
+        <div>Children is a automatically applied prop</div>
+      </OmniButton>
+
+      <OmniButton buttonName="component-children" onClick={generalClick}>
+        <p>Children can be other React Components</p>
+        <Circle />
+      </OmniButton>
     </div>
   );
 }
