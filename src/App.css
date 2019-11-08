@@ -32,3 +32,7 @@
   border: 3px solid blue;
   border-radius: 8rem;
 }
+
+.omni-button {
+  font-size: 1.5em;
+}
