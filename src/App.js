@@ -16,6 +16,8 @@ function App() {
         <p>Children can be other React Components</p>
         <Circle />
       </OmniButton>
+
+      <OmniButton buttonName="no-children" onClick={generalClick} />
     </div>
   );
 }
